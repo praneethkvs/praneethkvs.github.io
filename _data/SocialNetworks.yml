@@ -11,6 +11,11 @@ facebook:
   baseURL: "https://www.facebook.com/"
   icon: "fa-facebook"
 
+medium:
+  name: "Medium"
+  baseURL: "https://www.medium.com/"
+  icon: "fa-medium"
+
 github:
   name: "GitHub"
   baseURL: "https://github.com/"
