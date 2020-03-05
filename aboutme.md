@@ -1,16 +1,11 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Who am I?
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Hi there! I'm Praneeth Kandula, currently working for Best Buy out of their corporate headquarters in Richfield, Minnesota as a Data Analyst in Fraud Risk - focused on architecting analytical/modeling solutions to combat e-commerce fraud, primarily leveraging Machine Learning and Statistics . I graduated with a Master's Degree in Business Analytics and Information Systems from the University of South Florida, Tampa in December 2018.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+My past professional experience includes working with Bank of America as a Data Analyst intern crunching raw quantitative data to extract predictive signals and working as a Fraud Risk Analyst , leveraging transactional and historical data to fight e-commerce fraud at Amazon. I also have a Bachelor's degree in Computer Science from NIT Calicut, one of the premier Engineering Institutes in India. I love learning new things, solving puzzles, and making a positive impact on people around me.
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+I am currently exploring new opportunities and would love to talk. Give me a shout.
