@@ -19,7 +19,7 @@ medium:
 github:
   name: "GitHub"
   baseURL: "https://github.com/"
-  icon: "fab fa-github"
+  icon: "fa-github"
 
 twitter:
   name: "Twitter"
