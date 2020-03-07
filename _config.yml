@@ -21,6 +21,7 @@ description: A space of my own !
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+  Medium: "https://medium.com/@praneeth.jm"
   Resume: "PraneethKandula_resume.pdf"
 
 
