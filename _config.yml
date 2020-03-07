@@ -1,25 +1,3 @@
-# --- General options --- #
-
-# Name of website
-title: "Praneeth Kandula"
-
-# Short description of your site
-description: A space of my own !
-# --- Local development options ---
-# If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
-# *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
-
-# url is the the website domain URL without a trailing slash
-#url: "https://example.com"
-
-# baseurl should be an empty string
-#baseurl: ""
-
-# --- Navigation bar options --- #
-
-# List of links in the navigation bar
-navbar-links:
-  About Me: "aboutme"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
