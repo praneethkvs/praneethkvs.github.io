@@ -19,11 +19,10 @@ Now open "Git Bash" that you have just installed on your computer.
 This should bring up a command terminal.
 Let's get coding.
 
-Now we introduce ourselves to git, Run the following Commands
-```
-git config --global user.name "your_username_here"
-git config --global user.email "your_email_here"
-```
+Now we introduce ourselves to git, Run the following Commands   
+```git config --global user.name "your_username_here"```   
+```git config --global user.email "your_email_here"```
+
 
 Now that git knows who we are, we can continue.
 
@@ -52,7 +51,9 @@ The next git command shows the status of your repository i.e; files and folders 
 It should say "nothing to commit, working tree clean" as we haven't made any changes yet.
 
 This let's you see all the files in the folder "firstrepo".   
-```ls```
+```ls```   
+
+
 At this point you must be seeing a single file README.md
 
 Now we can create a new file from bash directly or copy all the files that you want to upload into the repository and paste them into the "firstrepo" folder.
@@ -81,8 +82,9 @@ You have just created your first GitHub repository. Rejoice.
 
 
 
-<b>Some useful git commands:   </b>
-```
+<b>Some useful git commands:   </b>   
+
+```cmd
 git ls-files #lists all available files in the repository.
 git rm filename #deletes the file from the repository, Do not forget to push the changes after deleting files.
 git add * #adds all files and folders n the repository in a single go
