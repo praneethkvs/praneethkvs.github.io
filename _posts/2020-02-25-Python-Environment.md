@@ -21,9 +21,23 @@ The create command automatically loads all available packages, if you want only 
 If you want all packages that are in the base anaconda, you could simply create a clone of the base environment as follows:  
 `conda create --name your_env_name --clone base`
 
+If you need to install the environment in a different directory location, you have the following two options:    
+You can `cd` into the directory you want to create the environment in and use:   
+`conda create --prefix=your_env_name python=3.7`   
+
+OR specify the path explicitly as follows:   
+`conda create --prefix=C:/users/.../your_directory/your_env_name python=3.7`
+
+To activate this environment you need to use the whole path   
+`activate C:/users/.../your_directory/your_env_name`   
+
+To avoid this you can run the following which will add the path to the `.condarc` file so that you can activate it with just the name.
+`conda config --append envs_dirs C:/users/.../your_directory/`
+`activate your_env_name`   
 
 
-Or you could also create an environment using a YAML File, see:   
+
+You could also create an environment using a YAML File, see:   
 https://towardsdatascience.com/getting-started-with-python-environments-using-conda-32e9f2779307
 
 ```
