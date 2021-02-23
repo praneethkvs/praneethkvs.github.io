@@ -13,7 +13,7 @@ facebook:
 
 medium:
   name: "Medium"
-  baseURL: "https://www.medium.com/"
+  baseURL: ""
   icon: "fa-medium"
 
 github:
