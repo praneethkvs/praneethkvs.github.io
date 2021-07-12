@@ -19,6 +19,6 @@ def newest(path):
     paths = [os.path.join(path, basename) for basename in files]
     return max(paths, key=os.path.getctime)
 
-file_name = newest("path_to_folder")
+file_name = newest("path_to_folder") #For file in current folder use newest(".")
 print(file_name)
 ```
