@@ -17,7 +17,7 @@ file_name <- rownames(file_list[order(as.POSIXct(file_list$mtime),decreasing = T
 
 Python:  
 
-```Python
+```python
 def newest(path):
     files = os.listdir(path)
     files = [file for file in files if file.endswith(".csv")] #you can optionally filter by file_type/pattern
