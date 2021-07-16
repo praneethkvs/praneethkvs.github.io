@@ -14,7 +14,7 @@ To Read multiple CSV Files in R into a single Dataframe.
 setwd("Directory/")
 file_list <- dir()
 
-data_frame <- do.call(rbind,lapply(filelist,function(x) {read.csv(x,stringsAsFactors = F)]}))
+data_frame <- do.call(rbind,lapply(file_list,function(x) {read.csv(x,stringsAsFactors = F)]}))
 write.csv(data_frame,"filename.csv",row.names = F)
 ```
   
@@ -38,7 +38,7 @@ data_frame = pd.concat((pd.read_csv(f) for f in file_list))
  
 If you need to filter out the `file_list` to only include a subset of files containing a specific substring:   
 ```python
-files_sublist = [f for f in files_list if "substring" in f]
+files_sublist = [f for f in file_list if "substring" in f]
 ```  
 
 If you are working with <b>Google Cloud Storage</b>:
