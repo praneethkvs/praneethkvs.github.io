@@ -57,7 +57,10 @@ files_list = ["gs://"+bucket_name+"/"+str(blob.name) for blob in client.list_blo
 #Get subset of files containing a substring and read them
 files_sublist = [file for file in files_list if "good" in file]
 data_frame = pd.concat((pd.read_csv(f) for f in files_sublist))
-```    
+```
+  
+    
+    
    
    
   
