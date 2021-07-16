@@ -26,7 +26,7 @@ To Read multiple CSV Files in Python into a single Pandas Dataframe.
 3) Use list comprehension to iteratively `pd.read_csv` from the `file_list` which contains the list of the names of all the csv files and `pd.concat` the resulting output into a single dataframe.
   
   
-```Python
+```python
 import pandas as pd
 import os
 
@@ -42,7 +42,7 @@ files_sublist = [f for f in files_list if "substring" in f]
 ```  
 
 If you are working with <b>Google Cloud Storage</b>:
-```Python
+```python
 import pandas as pd
 import os
 
