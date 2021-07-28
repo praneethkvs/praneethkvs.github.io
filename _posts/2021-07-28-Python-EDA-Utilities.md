@@ -4,6 +4,7 @@ title: Python EDA Utilities
 ---
 
 Automatic Exploratory Data Analysis (EDA) using <a href="https://pandas-profiling.github.io/pandas-profiling/docs/master/index.html">pandas-profiling<a> package.  
+Warnings Tab is especially useful to spot data quality issues and remove unusable and strongly correlated features.  
   
 ```python
 from pandas_profiling import ProfileReport
