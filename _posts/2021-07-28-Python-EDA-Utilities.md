@@ -3,7 +3,7 @@ layout: post
 title: Python EDA Utilities
 ---
 
-Automatic Exploratory Data Analysis (EDA) using <a href="https://pandas-profiling.github.io/pandas-profiling/docs/master/index.html">pandas-profiling<a> package.  
+Automatic Exploratory Data Analysis (EDA) using <a href="https://pandas-profiling.github.io/pandas-profiling/docs/master/index.html">pandas-profiling </a> package.  
 Warnings Tab is especially useful to spot data quality issues and remove unusable and strongly correlated features.  
   
 ```python
@@ -23,3 +23,12 @@ feats_dtypes_dict.keys()
 num_feats = feats_dtypes_dict["float64"].to_list() + feats_dtypes_dict["int64"].to_list()
 cat_feats = feats_dtypes_dict["object"].to_list()
 ```      
+
+Fetch all columns with missing values:
+  
+  ```python
+  df.isna().sum().sort_values(ascending=False).where(lambda x: x!=0).dropna()
+  ```  
+    
+      
+      
