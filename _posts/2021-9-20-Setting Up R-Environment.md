@@ -4,8 +4,8 @@ title: Setting Up R Environment
 ---
 
 Refs:   
-https://rstats.wtf/r-startup.html#renviron  
-http://www.dartistics.com/googleanalytics/setup.html#:~:text=Renviron%20file%20in%20your%20Home,Renviron%20.    
+<a href="https://rstats.wtf/r-startup.html#renviron"> Rstats - R startup</a>  
+<a href="http://www.dartistics.com/googleanalytics/setup.html#:~:text=Renviron%20file%20in%20your%20Home,Renviron%20"> Dartistics</a>
 
 Two main Setup files.  
 <b>`.Renviron` </b> - which contains environment variables to be set in R sessions.  
@@ -39,3 +39,9 @@ Sys.setenv("GCS_DEFAULT_BUCKET" = "bucket_name",
            "GCS_AUTH_FILE" = "path/to/key/file.json",
            "GCP_PROJECT" = "project_name")
 ```           
+  
+Also see <a href="https://rstats.wtf/maintaining-r.html"> here</a> - Transferring your library when updating R if you want to maintain different R_LIBS_USER paths for each version.  
+  
+    
+    
+
