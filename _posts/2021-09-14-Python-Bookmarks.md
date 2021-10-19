@@ -28,6 +28,23 @@ logger = logging.getLogger()
 #Log Message
 logger.info("Read {} lines from - {}".format(data_frame.shape[0],input_file))
 ```
+  
+If you want to log to both the console and a log file: 
+```python
+import logging
+logging.root.handlers = [] #Clear Handlers
+
+#Configure File and Stream handlers
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.FileHandler("./path_to_log_file.log"),
+        logging.StreamHandler()
+    ]
+)
+
+```
 
   
     
