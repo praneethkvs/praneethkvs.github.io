@@ -52,9 +52,9 @@ SELECT p.date, COALESCE(a.value, 0), p.grp_no
     ON p.grp_no = a.grp_no 
    AND p.date = a.date
 ```   
-    
-    
-
+  
+Pivot Rows to Columns Bigquery/SQL:  
+https://towardsdatascience.com/pivot-in-bigquery-4eefde28b3be
 
 
 
