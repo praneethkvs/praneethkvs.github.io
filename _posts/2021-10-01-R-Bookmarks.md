@@ -31,3 +31,9 @@ log_info("Logs being written to file -{log_file_path}")
 ```  
   
   
+<b> Using colClasses to Specify Data Type for a particular Column   </b>
+```R
+data <- read.csv('test.csv', colClasses=c("time"="character"))
+```  
+
+The above line of code will read the Column `time` as type `Character`. This approach is especially useful when trying to read quoted integers as character. https://stackoverflow.com/questions/2805357/specifying-colclasses-in-the-read-csv
