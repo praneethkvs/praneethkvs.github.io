@@ -57,7 +57,8 @@ SELECT p.date, COALESCE(a.value, 0), p.grp_no
 https://towardsdatascience.com/pivot-in-bigquery-4eefde28b3be
 
   
-<b> BigQuery - Group By and Concatenate row values in a column --</b>
+<b> BigQuery - Group By and Concatenate row values in a column </b> Source: https://stackoverflow.com/questions/41997005/bigquery-concatenate-multiple-rows-into-a-single-row  
+
 ```sql
 SELECT 
   user_id, 
@@ -67,7 +68,20 @@ GROUP BY user_id
 
 ```  
 
-Ref: https://stackoverflow.com/questions/41997005/bigquery-concatenate-multiple-rows-into-a-single-row
+<b> BigQuery - Using ARRAY_AGG() - Concatenate Field Values and Get first Value </b> Source: https://stackoverflow.com/questions/62080202/bigquery-standard-get-first-not-null-value-when-grouping  
 
+```sql
+SELECT user_id ,
+ARRAY_AGG(column_name IGNORE NULLS ORDER BY event_time desc LIMIT 1) [OFFSET(0)] as col1,
+FROM `table` t
+ WHERE 
+GROUP BY user_id     
+```  
+ARRAY_AGG() will combine all the field values into an array  
+IGNORE NULLS - Ignores NULLS  
+ORDER BY - order by the field you want  
+LIMIT 1 - Select only 1   
+[OFFSET(0)] - Converts the array type into single string    
 
-
+  
+  
