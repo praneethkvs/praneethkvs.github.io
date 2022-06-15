@@ -37,3 +37,26 @@ data <- read.csv('test.csv', colClasses=c("time"="character"))
 ```  
 
 The above line of code will read the Column `time` as type `Character`. This approach is especially useful when trying to read quoted integers as character. https://stackoverflow.com/questions/2805357/specifying-colclasses-in-the-read-csv
+  
+ 
+<b> Unable to install packages Error </b>  
+If you are trying to install R packages and you get an error similar to the one below - it is probably because you don't have permissions to write to that particular location.  
+```R
+install.packages('random')
+
+Installing package into ‘/usr/local/lib/R/site-library’
+(as ‘lib’ is unspecified)
+Warning in install.packages("random") :
+'lib = "/usr/local/lib/R/site-library"' is not writable
+```  
+So what you need to do is create a new directory in a place that doesn't require special write permissions- which you can do by running the following code  
+```R
+dir.create(Sys.getenv("R_LIBS_USER"), recursive = TRUE)  # create personal library
+.libPaths(Sys.getenv("R_LIBS_USER"))  # add to the path
+
+install.packages("randomForest")  # install like always
+library(randomForest)  # use library like always
+```
+  
+  Ref: https://stackoverflow.com/questions/32540919/library-is-not-writable
+   
