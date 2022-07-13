@@ -7,6 +7,7 @@ Automatic Exploratory Data Analysis (EDA) using <a href="https://pandas-profilin
 Warnings Tab is especially useful to spot data quality issues and remove unusable and strongly correlated features.  
   
 ```python
+#!pip install pandas_profiling 
 from pandas_profiling import ProfileReport
 
 #Pandas Profiling
