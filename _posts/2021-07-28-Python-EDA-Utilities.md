@@ -10,7 +10,7 @@ Warnings Tab is especially useful to spot data quality issues and remove unusabl
 from pandas_profiling import ProfileReport
 
 #Pandas Profiling
-profile = ProfileReport(df)
+profile = ProfileReport(df,title="Pandas Profiling Report")
 profile.to_file("pandas_profile.html",silent=False)
 ```  
   
