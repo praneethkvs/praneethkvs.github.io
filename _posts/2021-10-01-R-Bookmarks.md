@@ -60,3 +60,7 @@ library(randomForest)  # use library like always
   
   Ref: https://stackoverflow.com/questions/32540919/library-is-not-writable
    
+<b> Generate Automatic DocStrings for functions </b> - To generate automatic doc string templates for your R functions, place your cursor inside a function and hit `ctrl` + `shift` + `alt` + `R`.  
+
+   
+   
