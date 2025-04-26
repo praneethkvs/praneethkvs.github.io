@@ -22,7 +22,7 @@ description: A space of my own! (since Myspace is already taken)
 navbar-links:
   About Me: "aboutme"
   Blog: "https://praneeth-kandula.medium.com/"
-  Resume: "PraneethKandula_resume_101522.pdf"
+  Resume: "PraneethKandula_resume.pdf"
 
 
 # Image to show in the navigation bar - image must be a square (width = height)
